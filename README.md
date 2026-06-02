@@ -296,21 +296,6 @@ adb shell cat /sdcard/Snake/Skull_Face.yml
 
 ---
 
-## 11. Problème rencontré : permission de lecture du fichier YAML
-
-Lors du premier test, l’application a essayé de lire le fichier YAML mais a rencontré une erreur de permission :
-
-```text
-EACCES (Permission denied)
-```
-
-![Erreur permission YAML](captures/33.png)
-
-Cette erreur montre que le flux d’exploitation est correct, car l’application atteint bien l’étape de lecture du fichier `Skull_Face.yml`. Le problème venait uniquement de l’accès au stockage externe.
-
-La correction consiste à accorder les permissions nécessaires ou à utiliser un émulateur compatible avec l’accès classique au stockage externe.
-
----
 
 ## 12. Lancement avec l’Intent BigBoss et récupération du flag
 
